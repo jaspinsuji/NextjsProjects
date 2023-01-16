@@ -6,7 +6,7 @@ const User = () => {
             <>
                 <div>
                     Signed in as {session.user.email} <br />
-                    <button onClick={() => signOut()}>Sign out</button>
+                    <button onClick={() => signOut()} className='bg-blue-500 text-white px-6 py-2 rounded-md hover:brightness-105'>Sign out</button>
                 </div>
             </>
         )
@@ -14,8 +14,8 @@ const User = () => {
     return (
         <>
             <div>
-                Not signed in <br />
-                <button onClick={() => signIn()}>Sign in</button>
+                {/* Not signed in <br /> */}
+                <button onClick={() => signIn()} className='bg-blue-500 text-white px-6 py-2 rounded-md hover:brightness-105'>Sign in</button>
             </div>
         </>
     )
